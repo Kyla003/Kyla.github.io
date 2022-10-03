@@ -9,8 +9,8 @@
 <canvas id="gl-canvas" width="512" height="512"></canvas>
 <div>
 recursive steps  0 <input id="slider" type="range"
- min="0" max="5" step="1" value="0" />
-5
+ min="0" max="4" step="1" value="0" />
+4
 </div>
 
 
@@ -19,8 +19,7 @@ recursive steps  0 <input id="slider" type="range"
 in vec4 aPosition;
 
 void
-main()
-{
+main() {
     gl_Position = aPosition;
 }
 </script>
@@ -32,14 +31,13 @@ precision mediump float;
 out vec4 fColor;
 
 void
-main()
-{
+main() {
     fColor = vec4( 1.0, 0.0, 0.0, 1.0 );
 }
 </script>
 
-<script src="../Common/initShaders.js"></script>
-<script src="../Common/MVnew.js"></script>
+<script src="/Common/initShaders.js"></script>
+<script src="/Common/MVnew.js"></script>
 <script src="hw2.js"></script>
 
 
